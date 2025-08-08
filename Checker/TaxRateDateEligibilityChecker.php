@@ -19,7 +19,7 @@ use Sylius\Component\Taxation\Model\TaxRateInterface;
 final class TaxRateDateEligibilityChecker implements TaxRateDateEligibilityCheckerInterface
 {
     public function __construct(
-        protected DateTimeProviderInterface $calendar,
+        private DateTimeProviderInterface $calendar,
     ) {
     }
 
